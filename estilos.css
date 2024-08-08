@@ -35,7 +35,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(img/fondo.jpeg);
+    background-image: url(img/fondo.jpeg) no-repeat;
     background-size: 105%;
     text-align: center;
     font-family: Cormorant;
