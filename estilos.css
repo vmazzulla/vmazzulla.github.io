@@ -31,6 +31,10 @@
     text-decoration: overline underline;
 }
 
+hr {
+    color: white;
+    size: 2px;
+}
 
 body {
     margin: 0;
