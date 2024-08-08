@@ -52,7 +52,7 @@ h1 {
     font-size: 120px;
     letter-spacing: -8px;
     margin-top: 15%;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 .sobre-mi h2 {
-    color: rgb(25, 62, 73);
+    color: white;
     font-family: Cormorant;
     font-size: 400%;
     letter-spacing: -2px;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .proyectos h2, .redes h2 {
-    color: rgb(25, 62, 73);
+    color: white;
     font-family: Cormorant;
     font-size: 400%;
     letter-spacing: -2px;
@@ -108,7 +108,7 @@ h1 {
 }
 
 .redes a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
