@@ -113,8 +113,11 @@ h1 {
     width: 30px;
     border: 2px solid;
     border-radius: 9px;
-    margin-left: 65px;
-    margin-right: 65px;
+    margin: 5px 0;
+}
+
+.img-gmail {
+    background-color: white;
 }
 
 .redes a{
@@ -122,14 +125,19 @@ h1 {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-top: 8px;
+    padding-left: 5px;
 }
 
 .redes a:hover{
-    font-size: x-large;
     font-weight: bolder;
     text-decoration: underline;
+}
+
+.redes p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
