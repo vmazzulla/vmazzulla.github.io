@@ -15,7 +15,7 @@
 }
 
 .nav a {
-    font-size: 120%;
+    font-size: 110%;
     color: white;
     font-family: Cormorant;
     text-decoration: none;
@@ -23,12 +23,31 @@
     padding-right: 70px;
     padding-left: 70px;
     transition: .2s;
+    text-transform: uppercase;
+    width: max-content;
 }
 
 .nav a:hover {
-    font-size: x-large;
+    font-size:larger;
     font-weight: bolder;
     text-decoration: overline underline;
+}
+
+.toggle {
+    rotate: calc(90deg);
+    color: white;
+    background: none;
+    border: none;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    display: none;
+}
+ 
+
+.toggle button:hover{
+    font-size: large;
 }
 
 hr {
@@ -55,7 +74,7 @@ body {
 h1 {
     color: white;
     font-family: Cormorant;
-    font-size: 900%;
+    font-size: 700%;
     letter-spacing: -8px;
     margin-top: 15%;
     padding-bottom: 50px;
@@ -127,3 +146,9 @@ h1 {
     font-weight: bolder;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: red !important;
+    }
+} 
