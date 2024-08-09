@@ -111,14 +111,12 @@ h1 {
 
 .redes img{
     width: 30px;
-    border: 2px solid;
+    border: white 2px solid;
     border-radius: 9px;
     margin: 5px 0;
-}
-
-.img-gmail {
     background-color: white;
 }
+
 
 .redes a{
     color: white;
