@@ -151,4 +151,8 @@ h1 {
     .proyectos img{
         width: 70%;
     }
+
+    .nav a {
+        font-size: 90%;
+    }
 }
