@@ -153,10 +153,11 @@ h1 {
     }
 
     .nav a {
-        font-size: 90%;
+        font-size: 60% !important;
+        margin: 0 30px !important;
     }
 
-    .sobre-mi h2 {
-        margin-top: 4%;
+    hr {
+        margin-top: 100px;
     }
 }
