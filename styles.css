@@ -29,7 +29,7 @@ header {
     padding: 0.5rem 1rem 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
-    border: #d1d1d1 solid 1px;
+    border: #b84eff solid 1px;
     border-radius: 9999px;
     background-color: #11111170;
     gap: 2rem;
@@ -94,11 +94,16 @@ h1 {
     margin: 0;
     font-family: "Courier New";
     border-bottom: #b84eff solid 1px;
-    width: fit-content;
+    max-width: 60vw;
+    min-width: min-content;
+
 }
 
-#divHome p {
-    
+#divAboutMe p {
+    width: 50vw;
+    border: #b84eff solid 1px;
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 .seccion {
