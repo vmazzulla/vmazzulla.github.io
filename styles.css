@@ -128,7 +128,7 @@ h2 {
     gap: 2rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     #divSkills {
         grid-template-columns: repeat(3, 1fr);
     }
