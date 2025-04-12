@@ -23,14 +23,22 @@
     <main>
 
         <div class="seccion" id="divHome">
-            <h1>Valentina Mazzulla</h1><!--typescript-->
+            <h1>Valentina Mazzulla</h1>
             <p>I'm an IT analyst from Uruguay</p>
+            <div id="redes">
+                <a href="https://github.com/vmazzulla" target="_blank">
+                    <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff" alt="GitHub">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=ffffff" alt="LinkedIn">
+                </a>
+            </div>
+            <a id="resume" href="img/CV - Valentina Mazzulla.pdf" target="_blank">My Resume</a>
         </div>
 
         <div class="seccion" id="divAboutMe">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cupiditate expedita rerum unde tempora sint, illo impedit harum! Dolore quisquam iste ab, natus autem incidunt commodi quidem provident alias adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio officiis dolore a fugit sequi et mollitia inventore deserunt dolorum, nulla pariatur illo, omnis temporibus consequuntur officia aut dicta nemo incidunt.</p>
-            
+            <p>Hello, I’m Valentina Mazzulla, a 21-year-old from Uruguay with a passion for technology. I began my journey in IT through the “Jóvenes a Programar” program by Ceibal, where I gained valuable skills in web design and development, sparking my interest in the field. Now, I’m studying to become an IT Analyst at Universidad ORT Uruguay, continuing to grow and expand my knowledge in this exciting industry.</p>
         </div>
 
         <div class="seccion">
@@ -49,7 +57,7 @@
                     <p>JavaScript</p>
                 </div>
                 <div class="skill">
-                    <span><img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000" alt=""></span>
+                    <span><img src="https://img.icons8.com/?size=100&id=45490&format=png&color=000000" alt=""></span>
                     <p>C#</p>
                 </div>
                 <div class="skill">
@@ -96,10 +104,28 @@
                 </div>
             </a>
         </div>
-
     </main>
-    
+
+    <!-- Botón para ir hacia arriba -->
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
 
     <footer>Copyright © 2025 Valentina Mazzulla. All Rights Reserved. Icons by <a href="https://icons8.com/">Icons8</a></footer>
+    
+    <!-- Script para el botón -->
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
 </html>
