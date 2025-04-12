@@ -26,7 +26,7 @@ header {
 #nav-bar {
     list-style-type: none;
     margin: 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.6rem 1rem;
     display: flex;
     justify-content: space-between;
     border: #b84eff solid 1px;
@@ -62,7 +62,7 @@ footer {
     font-size: 0.8rem;
     
     text-align: center;
-    padding-bottom: 5px;
+    padding: 0 2% 2% 2%;
     
 }
 
@@ -189,6 +189,14 @@ h2 {
     opacity: 1;
 }
 
+#divProjects {
+    padding: 0 5%;
+}
+
+#divProjects p{
+    margin-bottom: 6px;
+}
+
 #divProjects a{
     text-decoration: none;
     color: #d1d1d1;
@@ -203,7 +211,7 @@ h3 {
 
 /*-----scroll-----*/
 
-html {
+/*html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-}
+}*/
