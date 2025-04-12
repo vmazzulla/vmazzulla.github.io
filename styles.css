@@ -82,7 +82,7 @@ main {
 
 p {
     font-size: 1.05rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -92,11 +92,12 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 h1 {
-    font-size: 4.1rem;
-    margin: 3rem 0 0 0;
+    font-size: 4rem;
+    margin: 4.5rem 0 0 0;
     font-family: "Courier New";
     border-bottom: #b84eff solid 1px;
     max-width: 60vw;
@@ -112,7 +113,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 #redes img {
@@ -146,7 +147,7 @@ h2 {
 
 .seccion {
     justify-items: center;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
