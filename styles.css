@@ -58,15 +58,20 @@ a:hover {
 
 /*-----Footer-----*/
 
-footer {
-    font-size: 0.8rem;
-    
-    text-align: center;
-    padding: 0 2% 2% 2%;
-    
+#divContact {
+    position: relative;
 }
 
-footer a {
+#divContact footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+}
+
+#divContact footer a {
     color: #d1d1d1;
     text-decoration: none;
     border-bottom: #d1d1d1 solid 1px;
@@ -75,10 +80,6 @@ footer a {
 
 
 /*-----secciones-----*/
-
-main {
-
-}
 
 p {
     font-size: 1.05rem;
@@ -139,10 +140,13 @@ h2 {
 }
 
 #divAboutMe p {
-    width: 50vw;
+    width: 90vw;
+    max-width: 30rem;
     border: #b84eff solid 1px;
     border-radius: 20px;
     padding: 1rem;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 .seccion {
@@ -275,4 +279,50 @@ html {
 
 #scrollToTopBtn:hover {
     background-color: #9d3fd7;
+}
+
+
+/*-----Contact Me-----*/
+
+#divContact form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 30rem;
+    border: #9d3fd7 solid 1px;
+    border-radius: 20px;
+    padding: 1.7rem;
+    box-sizing: border-box;
+}
+
+#divContact form button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: #b84eff solid 1px;
+    background-color: #3a3a3a;
+    color: white;
+    transition: 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#divContact form button:hover {
+    background-color: #b84eff;
+    color: white;
+}
+
+#divContact form input,
+#divContact form textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #3a3a3a;
+    color: white;
+    transition: 0.3s;
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
 }
