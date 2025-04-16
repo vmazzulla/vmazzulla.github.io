@@ -294,6 +294,7 @@ html {
     border-radius: 20px;
     padding: 1.7rem;
     box-sizing: border-box;
+    box-shadow: 0px 0px 40px #fff2;
 }
 
 #divContact form button {
