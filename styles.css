@@ -1,38 +1,82 @@
+:root {
+    --principal-color: #f1bcd6;
+    --second-color: #4b1535;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1d1d1d;
     color: #d1d1d1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    align-items: center;
     margin: 0;
-    text-align: center;
-    justify-content: center;
+    padding: 1rem;
+    display: flex;
+    background: linear-gradient(194deg,rgba(74, 10, 74, 1) 0%, rgba(17, 6, 43, 1) 25%, rgba(17, 6, 43, 1) 67%, rgba(29, 82, 128, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sidebar {
+    width: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--principal-color) solid 1px;
+    border-radius: 1rem;
+    height: calc(100vh - 2rem);
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: #11111170;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 
 
 /*-----Nav-bar-----*/
 
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 21rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 header {
     justify-items: center;
-    margin-top: 10px;
     height: 3rem;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 999;
+    position: fixed;
+    top: 1rem;
+    left: 10rem;
 }
 
 #nav-bar {
+    box-sizing: border-box;
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 1rem 0.6rem 1rem;
     display: flex;
     justify-content: space-between;
-    border: #b84eff solid 1px;
+    border: var(--principal-color) solid 1px;
     border-radius: 9999px;
     background-color: #11111170;
     gap: 2rem;
+    width: 60%;
 }
 
 #nav-bar li {
@@ -50,8 +94,8 @@ header {
     transition: 0.3s;
 }
 
-a:hover {
-    color: white !important;
+#nav-bar a:hover {
+    color: white;
 }
 
 
@@ -98,12 +142,11 @@ p {
 
 h1 {
     font-size: 4rem;
-    margin: 4.5rem 0 0 0;
+    font-weight: 900;
+    margin: 0;
     font-family: "Courier New";
-    border-bottom: #b84eff solid 1px;
-    max-width: 60vw;
-    min-width: min-content;
-
+    margin-bottom: 1rem;
+    color: var(--principal-color);
 }
 
 h2 {
@@ -123,26 +166,29 @@ h2 {
 }
 
 #resume {
+    box-sizing: border-box;
     margin-top: 1rem;
     padding: 0.5rem 1rem 0.6rem 1rem;
     background-color: transparent;
-    border: #b84eff solid 1px;
+    border: var(--principal-color) solid 1px;
     border-radius: 9999px;
-    color: #b84eff;
+    color: var(--principal-color);
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
+    width: 100%;
+    text-align: center;
 }
 
 #resume:hover {
-    background-color: #b84eff;
-    color: white;
+    background-color: var(--principal-color);
+    color: var(--second-color);
 }
 
 #divAboutMe p {
     width: 90vw;
     max-width: 30rem;
-    border: #b84eff solid 1px;
+    border: var(--principal-color) solid 1px;
     border-radius: 20px;
     padding: 1rem;
     box-sizing: border-box;
@@ -156,8 +202,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
 }
 
 #divSkills {
@@ -209,8 +253,9 @@ h2 {
 }
 
 .skill {
-    opacity: 0.3;
+    opacity: 0.5;
     transition: 0.3s;
+    text-align: center;
 }
 
 .skill p{
@@ -250,10 +295,7 @@ h3 {
 
 /*-----scroll-----*/
 
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
+
 
 
 /* Botón para subir */
@@ -265,8 +307,8 @@ html {
     z-index: 99;
     font-size: 18px;
     background-color: transparent;
-    border: #b84eff solid 1px;
-    color: white;
+    border: var(--principal-color) solid 1px;
+    color: var(--principal-color);
     outline: none;
     padding: 8px 8px 10px 8px;
     border-radius: 50%;
@@ -278,7 +320,8 @@ html {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #9d3fd7;
+    background-color: var(--principal-color);
+    color: var(--second-color);
 }
 
 
@@ -290,7 +333,7 @@ html {
     flex-direction: column;
     width: 90vw;
     max-width: 30rem;
-    border: #9d3fd7 solid 1px;
+    border: var(--principal-color) solid 1px;
     border-radius: 20px;
     padding: 1.7rem;
     box-sizing: border-box;
@@ -301,17 +344,17 @@ html {
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 10px;
-    border: #b84eff solid 1px;
+    border: var(--principal-color) solid 1px;
     background-color: #3a3a3a;
-    color: white;
+    color: var(--principal-color);
     transition: 0.3s;
     width: 100%;
     box-sizing: border-box;
 }
 
 #divContact form button:hover {
-    background-color: #b84eff;
-    color: white;
+    background-color: var(--principal-color);
+    color: var(--second-color);
 }
 
 #divContact form input,
@@ -326,4 +369,40 @@ html {
     resize: vertical;
     width: 100%;
     box-sizing: border-box;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .sidebar {
+        margin-top: 4rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        height: calc(100vh - 6rem);
+    }
+
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+    }
+
+    #nav-bar {
+        gap: 2rem;
+        width: 90%;
+    }
+
 }
