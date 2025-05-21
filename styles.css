@@ -26,10 +26,11 @@ body {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     border: var(--principal-color) solid 1px;
     border-radius: 1rem;
-    height: calc(100vh - 2rem);
+    min-height: calc(100vh - 2rem);
     position: fixed;
     top: 1rem;
     left: 1rem;
@@ -41,6 +42,23 @@ body {
     border-radius: 0.5rem;
 }
 
+.sidebar p, a {
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar p {
+    margin-top: 1rem;
+}
+
+.sidebar h4 {
+    margin: 0;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: white;
+}
 
 
 /*-----Nav-bar-----*/
@@ -153,16 +171,28 @@ h2 {
     margin-bottom: 3rem;
 }
 
+#div-redes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 #redes {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
+
+#redes a {
+    width: fit-content;
+}
+
 
 #redes img {
     width: 30px;
     height: 30px;
+    margin: 0;
 }
 
 #resume {
@@ -275,6 +305,7 @@ h2 {
 
 #divProjects {
     padding: 0 5%;
+    align-self: center;
 }
 
 #divProjects p{
@@ -380,12 +411,16 @@ h3 {
     }
 
     .sidebar {
-        margin-top: 4rem;
+        margin-top: 3.5rem;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         position: static;
-        height: calc(100vh - 6rem);
+        min-height: calc(100vh - 6rem);
+    }
+
+    .sidebar p, a {
+        font-size: 1.5rem;
     }
 
     main {
@@ -401,7 +436,7 @@ h3 {
     }
 
     #nav-bar {
-        gap: 2rem;
+        gap: 0.5rem;
         width: 90%;
     }
 
