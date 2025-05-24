@@ -11,6 +11,8 @@
 </head>
 <body>
 
+    <div id="background_0"></div>
+
     <aside class="sidebar">
         <div>
             <h4>Valentina Mazzulla</h4>
@@ -43,7 +45,7 @@
         </header>
 
         <div class="seccion" id="divHome">
-            <h1>Hi! I'm Valentina<br>An IT Analyst and software developer</h1>
+            <h1><span id="valentina">Hi! I'm Valentina</span><br>An IT Analyst and Software Developer</h1>
         </div>
 
         <div class="seccion" id="divAboutMe">
@@ -180,8 +182,34 @@
                 });
             });
         });
-
-
     </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("background_0", {
+    "particles": {
+        "number": { "value": 100, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": { "enable": true, "distance": 150, "color": "#ffffff" },
+        "move": { "enable": true, "speed": 2 }
+    },
+    "interactivity": {
+        "detect_on": "window",
+        "events": {
+            "onhover": { "enable": true, "mode": "grab" },
+            "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+            "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+            "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+            "repulse": { "distance": 200, "duration": 0.4 },
+            "push": { "particles_nb": 4 }
+        }
+    }
+});
+
+</script>
 </body>
 </html>
