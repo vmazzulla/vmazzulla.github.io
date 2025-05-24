@@ -480,4 +480,11 @@ h3 {
         width: 90%;
     }
 
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #valentina {
+        font-size: 3.5rem;
+    }
 }
