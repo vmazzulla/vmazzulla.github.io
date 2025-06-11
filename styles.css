@@ -25,7 +25,6 @@ body {
     height: 100%;
     z-index: -1;
     background-color: #1d1e33;
-    background-image: url('TU_IMAGEN_URL'); /* Si deseas agregar una imagen de fondo */
     background-size: cover;
 }
 
